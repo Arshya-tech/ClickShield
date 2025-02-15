@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Phishing URL Detector",
+    "version": "1.0",
+    "description": "Warns users when they visit phishing websites.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+  },
+    "permissions": ["activeTab"],
+
+    
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": [
+      "https://*.googleapis.com/*"
+    ]
+  }
+  
