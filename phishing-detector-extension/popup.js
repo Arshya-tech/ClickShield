@@ -14,6 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    function speakText(text) {
+        if ('speechSynthesis' in window) {
+            speechSynthesis.cancel(); // Stop any ongoing speech
+            let utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = "en-US";
+            utterance.rate = 1.0; // Normal speed
+            utterance.pitch = 1.0; // Normal pitch
+            speechSynthesis.speak(utterance);
+            console.log("Speaking:", text);
+        } else {
+            console.error("Text-to-Speech not supported in this browser.");
+        }
+    }
+
     function checkWebsiteSafety() {
         loader.style.display = "inline-block";
         statusText.innerText = "Analyzing...";
@@ -45,20 +59,26 @@ document.addEventListener("DOMContentLoaded", function () {
                         loader.style.display = "none";
     
                         if (data.matches) {
-                            statusText.innerHTML = "⚠️ This might be a phishing site!";
+                            let message = "Warning! This might be a phishing site!";
+                            statusText.innerHTML = `⚠️ ${message}`;
                             statusText.style.color = "#ff1744";
+                            speakText(message);
                         } else {
-                            statusText.innerHTML = "✅ This website is safe!";
+                            let message = "This website is safe.";
+                            statusText.innerHTML = `✅ ${message}`;
                             statusText.style.color = "#00c853";
+                            speakText(message);
                         }
-                    }, 1500); // Wait for 1.5 seconds before showing the result
+                    }, 1500); // Wait 1.5 seconds before showing result
                 })
                 .catch(error => {
                     setTimeout(() => {
+                        let message = "Error checking site safety.";
                         loader.style.display = "none";
-                        statusText.innerHTML = "⚠️ Error checking site safety!";
+                        statusText.innerHTML = `⚠️ ${message}`;
                         statusText.style.color = "#ffa000";
                         console.error("API Error:", error);
+                        speakText(message);
                     }, 1500);
                 });
         });
