@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    width: 320px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3F2FD; /* Light futuristic blue */
+}
+
+/* Popup container */
+.popup-container {
+    background: #FFFFFF; /* Clean white for a modern sleek look */
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 255, 0.2);
+    padding: 25px;
+    width: 90%;
+    text-align: center;
+    border: 2px solid #2196F3; /* Electric blue border */
+}
+
+/* Header */
+h2 {
+    color: #0D47A1; /* Strong, high-tech blue */
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Status text */
+p {
+    color: #1565C0; /* Vibrant blue for readability */
+    font-size: 16px;
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+/* Loader */
+.loader {
+    width: 45px;
+    height: 45px;
+    border: 5px solid #BBDEFB;
+    border-top: 5px solid #004DFF; /* Strong futuristic blue */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin: 15px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button */
+button {
+    margin-top: 18px;
+    background: #004DFF; /* High-tech neon blue */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 77, 255, 0.5);
+}
+
+button:hover {
+    background: #002EB8; /* Darker neon blue */
+    box-shadow: 0 6px 16px rgba(0, 77, 255, 0.8);
+}
+
+/* Status Colors */
+#status.safe {
+    color: #00C853;
+    font-weight: bold;
+}
+
+#status.warning {
+    color: #D50000;
+    font-weight: bold;
+}
