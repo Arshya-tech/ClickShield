@@ -38,12 +38,12 @@ By providing **text-to-speech capabilities**, we ensure that even users with lim
 
 ## Technologies Used
 
-** Frontend & Extension Features **
+**Frontend & Extension Features**
 
 - JavaScript (Chrome Extension API) – Manages the extension's UI and interactions.
 - Speech Synthesis API (Text-to-Speech) – Reads safety warnings out loud.
 - 
-** Backend **
+**Backend**
   
 - Flask (Python) – Backend API for AI-generated explanations.
 - LLaMA (Large Language Model Meta AI) – Pre-trained transformer model, fine-tuned to detect and explain phishing indicators.
