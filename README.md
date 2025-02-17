@@ -8,8 +8,8 @@ The **ClickShield** is a Google Chrome extension designed to help users identify
 ## Features
 
 - **AI-Powered Explanations (LLaMA Model)** – Our Flask-based backend leverages a fine-tuned LLaMA (Large Language Model Meta AI) to generate detailed, contextual explanations about why a site may be unsafe.
-- **Google Safe Browsing API Integration**: Uses Google’s extensive database to identify threats and determine whether a website is safe or malicious.
-- **Text-to-Speech for Elderly Users**: This feature is tailored to help older adults who may find it challenging to identify unsafe websites. The extension reads out alerts and safety checks in an easily understandable way, promoting independence for elderly users.
+- **Google Safe Browsing API Integration** - Uses Google’s extensive database to identify threats and determine whether a website is safe or malicious.
+- **Text-to-Speech for Elderly Users** - This feature is tailored to help older adults who may find it challenging to identify unsafe websites. The extension reads out alerts and safety checks in an easily understandable way, promoting independence for elderly users.
 - **Real-Time Website Scanning** – Automatically checks the current website for threats and alerts users instantly.
 - **Easy to Use** – Seamlessly integrates with Chrome as a lightweight extension.
 
@@ -19,7 +19,7 @@ Elderly individuals are especially vulnerable to cybercrimes like phishing, frau
 
 By providing **text-to-speech capabilities**, we ensure that even users with limited technical knowledge can easily interact with the extension and make safer online decisions.
 
-# Stats on Elderly Internet Vulnerability
+## Stats on Elderly Internet Vulnerability
 
 - **60%** of older adults report being victims of online scams.
 - **10%** of older adults have lost money due to phishing attacks.
