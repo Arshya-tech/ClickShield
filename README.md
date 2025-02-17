@@ -1,6 +1,8 @@
 
 # ClickShield - Chrome Extension
 
+🏆 TD Shoutout Winner | Recognized for Innovation in Cybersecurity !
+
 ## Overview
 
 The **ClickShield** is a Google Chrome extension designed to help users identify phishing, fraud, or scam websites in real time. This extension leverages an AI-powered backend hosted via Flask, which provides personalized results on whether a website is safe or not. The core functionality is powered by **Google Safe Browsing API**, ensuring reliable data for web safety checks.
