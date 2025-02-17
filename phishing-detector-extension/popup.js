@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 
-    const API_KEY = "API_KEY";  // Replace with your actual API key
+    const API_KEY = "API_KEY";  
     const API_URL = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${API_KEY}`;
 
     function getActiveTabUrl(callback) {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function speakText(text) {
         if ('speechSynthesis' in window) {
-            speechSynthesis.cancel(); // Stop any ongoing speech
+            speechSynthesis.cancel(); // Stops any ongoing speech
             let utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = "en-US";
             utterance.rate = 1.0; // Normal speed
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             statusText.style.color = "#00c853";
                             speakText(message);
                         }
-                    }, 1500); // Wait 1.5 seconds before showing result
+                    }, 1500); // Waits 1.5 seconds before showing result
                 })
                 .catch(error => {
                     setTimeout(() => {
@@ -86,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Run check on pop-up open
+    // Runs check on pop-up open
     checkWebsiteSafety();
 
-    // Re-check when button is clicked
+    // Re-checks when button is clicked
     checkButton.addEventListener("click", checkWebsiteSafety);
 });
