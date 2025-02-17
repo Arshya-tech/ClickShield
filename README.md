@@ -11,7 +11,7 @@ The **ClickShield** is a Google Chrome extension designed to help users identify
 - **Google Safe Browsing API Integration**: Uses Google’s extensive database to identify threats and determine whether a website is safe or malicious.
 - **Text-to-Speech for Elderly Users**: This feature is tailored to help older adults who may find it challenging to identify unsafe websites. The extension reads out alerts and safety checks in an easily understandable way, promoting independence for elderly users.
 - **Real-Time Website Scanning** – Automatically checks the current website for threats and alerts users instantly.
-  **Easy to Use** – Seamlessly integrates with Chrome as a lightweight extension.
+- **Easy to Use** – Seamlessly integrates with Chrome as a lightweight extension.
 
 ## Why This Project?
 
@@ -41,7 +41,7 @@ URL: https://youtu.be/iqAYS1HcUPE
 
 **Frontend & Extension Features**
 
-- JavaScript (Chrome Extension API) – Manages the extension's UI and interactions.
+- JavaScript, HTML/CSS (Chrome Extension) – Manages the extension's UI and interactions.
 - Speech Synthesis API (Text-to-Speech) – Reads safety warnings out loud.
 
 **Backend**
