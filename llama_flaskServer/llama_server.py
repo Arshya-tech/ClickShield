@@ -1,6 +1,6 @@
 from llama_cpp import Llama
 
-# Load the model (Change path if needed)
+# Loads the model (Can change path if needed)
 llm = Llama(model_path="path")  # Update to your actual path
 
 def get_ai_explanation(url, reason):
