@@ -4,18 +4,18 @@ from flask_cors import CORS
 
 
 
-# Load the model
+# Loads the model
 llm = Llama(model_path="path")
 
 app = Flask(__name__)
-CORS(app)  # This allows all domains by default. You can restrict it as needed.
+CORS(app)  # This allows all domains by default. Can restrict it as needed.
 
 @app.route("/explanation", methods=["POST"])
 def explain():
     try:
-        print("Request received!")  # Add this line for logging
+        print("Request received!")  #  logging
         data = request.json
-        print("Received data:", data)  # Log the received data
+        print("Received data:", data)  # Logs the received data
         url = data.get("url", "unknown website")
         reason = data.get("reason", "no reason provided")
         prompt = f"The website {url} is unsafe due to {reason}. Explain why in simple terms."
@@ -26,4 +26,4 @@ def explain():
         print(f"Error: {e}")
         return jsonify({'error': 'An error occurred while processing the request'}), 500
 if __name__ == "__main__":
-    app.run(port=5001, debug=True)
+    app.run(port=5001, debug=True) #hosted on 5001 locally
