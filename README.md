@@ -36,6 +36,24 @@ By providing **text-to-speech capabilities**, we ensure that even users with lim
 
 URL: https://youtu.be/iqAYS1HcUPE
 
+### Preview
+- Chrome extension testing
+  
+![Alt Text](phishing-detector-extension/Safe_popup_test.png)
+
+
+![Alt Text](phishing-detector-extension/Unsafe_popup_test.png)
+
+
+- Llama model logs 
+
+![Alt Text](llama_flaskServer/Llama_logs.png)
+
+- Llama model testing on Postman
+
+![Alt Text](llama_flaskServer/Llama_postman_testing.png)
+
+
 
 ## Technologies Used
 
