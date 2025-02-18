@@ -1,7 +1,7 @@
 
 # ClickShield - Chrome Extension
 
-🏆 TD Shoutout Winner | Recognized for Innovation in Cybersecurity !
+🏆 TD Shoutout Winner | Recognized for Innovation in Cybersecurity and AI !
 
 ## Overview
 
